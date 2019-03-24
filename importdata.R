@@ -52,7 +52,7 @@ head(tw50_2017)
 install.packages("quantmod")
 library(quantmod)
 getsymbols("2330.TW",from='2016-01-01',auto.assign=T)
-tw2330<-c1('2330.tw')
+tw2330<-Ad('2330.tw')
 
 
 #=============================================================================
