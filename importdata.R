@@ -51,9 +51,16 @@ head(tw50_2017)
 #
 install.packages("quantmod")
 library(quantmod)
+tickers<-c("2330.tw","1101.tw","1102.tw")
 getsymbols("2330.TW",from='2016-01-01',auto.assign=T)
-tw2330<-Ad('2330.tw')
-
+#
+code50<-tw50_2017$code
+code50.tw<-paste(code50,"tw",sep="")
+#
+data=new.env()
+getsymbols(code50.tw,from='2016-01-01',env=data,auto.assign=T)
+names(data)
+data$'1101.tw'
 
 #=============================================================================
 # clean data
