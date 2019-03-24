@@ -51,6 +51,9 @@ head(tw50_2017)
 #
 install.packages("quantmod")
 library(quantmod)
+getsymbols("2330.TW",from='2016-01-01',auto.assign=T)
+
+
 
 #=============================================================================
 # clean data
